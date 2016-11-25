@@ -1,0 +1,69 @@
+/*
+|----------------------------------------------
+| Reset
+|----------------------------------------------
+*/
+*, html, body {margin:0; padding:0; font-size:100%;}
+body {font:0.93em Arial, sans-serif; color:#000; text-align:left; line-height:1.3em;}
+	a {text-decoration:none; color:#1a1a1a;}
+	//a:hover {}
+	img, a img, fieldset {border:0;}
+	address, em {font-style:normal;}
+	li {list-style-type:none;}	
+	p{
+        font-family: 'Open Sans';
+        text-align: justify; 
+        color:#2a2a2a; 
+        line-height:25px;
+    }	
+	
+//for para cores e margin nos titulos
+
+ @for $i from 1 through 6 {
+   h#{$i} {      
+      font-family: 'Open Sans';
+     }
+ }
+
+
+
+
+
+// títulos
+.tit{
+	margin:80px 0 40px; 
+}
+
+// vertical middle => 
+.lista{
+	&__link{
+		display: block;
+		&:hover{
+			background-color: #b9c4d3 !important
+		}
+	}
+}
+.box{
+	display:inline-table;
+	height:150px;
+	width:100%;
+	text-align:center;
+	&__item{
+		display: table-cell;
+		vertical-align: middle;	
+		text-align:center;		
+		font-family: 'Open Sans';
+		font-size: .9em;
+		color: #fff;
+	}
+	
+	&__tit{
+		font-size:1.2em
+	}
+	&__img{
+		margin: 0 auto;
+    width:32px;
+    height:32px;    
+	}
+}
+
